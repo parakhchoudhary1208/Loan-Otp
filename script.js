@@ -31,7 +31,7 @@ function validateLoanAmount(){
     
     function validateEmail(){
         let email = document.getElementById('email').value;
-        let emailCheck = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+        let emailCheck = /^[A-Za-z\._]+[0-9]*[@][A-Za-z]+[0-9]*[\.][a-z]{2,4}$;
         if(email.trim()!="" && email.length>3 && emailCheck.test(email) ) {
             document.getElementById('emailError').innerHTML = "";
             return true;
